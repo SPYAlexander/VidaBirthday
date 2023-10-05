@@ -5,9 +5,34 @@ var S = {
 
         // Text to display with delays
         var textToDisplay = [
-            "我爱你",
             "#countdown 3",
-            "မင်္ဂလာပါ",
+            "Hi အိန္ဒြေ",
+            "Happy birthday!",
+            "I know that",
+            "things have been",
+            "tough in Myanmar",
+            "but I want you",
+            "to know that",
+            "I'm thinking of you",
+            "and wishing you",
+            "all the best",
+            "on your special day",
+            "You are a talented",
+            "and caring person",
+            "I'm so lucky",
+            "to have you",
+            "as a friend",
+            "I hope you", 
+            "have a wonderful day",
+            "filled with joy,", 
+            "peace and love",
+            "May your",
+            "artistic spirit",
+            "continue to",
+            "shine brightly", 
+            "May your dreams",
+            "come true!",
+            "အဲ့ဒီတော့",
             "#time"
         ];
 
@@ -18,7 +43,7 @@ var S = {
                 S.UI.simulate(text);
                 setTimeout(function () {
                     displayTextWithDelay(index + 1);
-                }, 1000); // Adjust the delay time (in milliseconds) as needed
+                }, 5500); // Adjust the delay time (in milliseconds) as needed
             }
         }
 
