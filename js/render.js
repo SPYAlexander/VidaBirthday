@@ -3,7 +3,7 @@ var S = {
         S.Drawing.init('.canvas');
         document.body.classList.add('body--ready');
         // 文字切换
-        S.UI.simulate("你好 |#countdown 3|မင်္ဂလာပါ|#time");
+        S.UI.simulate("h 你好 |#countdown 3|မင်္ဂလာပါ|#time");
         S.Drawing.loop(function () {
             S.Shape.render();
         });
