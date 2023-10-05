@@ -2,8 +2,29 @@ var S = {
     init: function () {
         S.Drawing.init('.canvas');
         document.body.classList.add('body--ready');
-        // 文字切换
-        S.UI.simulate("我爱你|#countdown 3|မင်္ဂလာပါ|#time");
+
+        // Text to display with delays
+        var textToDisplay = [
+            "我爱你",
+            "#countdown 3",
+            "မင်္ဂလာပါ",
+            "#time"
+        ];
+
+        // Function to display text with delays
+        function displayTextWithDelay(index) {
+            if (index < textToDisplay.length) {
+                var text = textToDisplay[index];
+                S.UI.simulate(text);
+                setTimeout(function () {
+                    displayTextWithDelay(index + 1);
+                }, 1000); // Adjust the delay time (in milliseconds) as needed
+            }
+        }
+
+        // Start displaying text with delays
+        displayTextWithDelay(0);
+
         S.Drawing.loop(function () {
             S.Shape.render();
         });
