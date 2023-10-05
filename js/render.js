@@ -43,7 +43,7 @@ var S = {
                 S.UI.simulate(text);
                 setTimeout(function () {
                     displayTextWithDelay(index + 1);
-                }, 5500); // Adjust the delay time (in milliseconds) as needed
+                }, 5000); // Adjust the delay time (in milliseconds) as needed
             }
         }
 
